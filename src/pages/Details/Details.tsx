@@ -1,11 +1,11 @@
 import { Column, Text } from 'components'
 
-const Home = () => {
+const Details = () => {
   return (
     <Column>
-      <Text>QR Code Image Generator</Text>
+      <Text>Details Page</Text>
     </Column>
   )
 }
 
-export default Home
+export default Details
