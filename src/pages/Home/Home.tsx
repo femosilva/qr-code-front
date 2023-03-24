@@ -7,21 +7,18 @@ const Home = () => {
     linkedin: '',
     github: ''
   }
-  console.log(JSON.stringify(obj))
   return (
     <Column p='2rem'>
       <Text variant='big' fontWeight='bold' mb='16px'>
         QR Code Image Generator
       </Text>
-      <form>
-        <Input name='name' />
-        <Input name='linkedin' />
-        <Input name='github' />
-        <Button fontWeight='bold' width='340px' mt='16px'>
-          Generate Image
-        </Button>
-      </form>
-      <QRCodeSVG value={JSON.stringify(obj)} />
+      <Input name='name' value={obj.name} />
+      <Input name='linkedin' />
+      <Input name='github' />
+      <Button fontWeight='bold' width='340px' mt='16px'>
+        Generate Image
+      </Button>
+      <QRCodeSVG value={JSON.stringify(obj.github)} />
     </Column>
   )
 }
