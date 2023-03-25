@@ -18,7 +18,7 @@ const Home = () => {
       <Button fontWeight='bold' width='340px' mt='16px'>
         Generate Image
       </Button>
-      <QRCodeSVG value={JSON.stringify(obj.github)} />
+      <QRCodeSVG value={JSON.stringify(obj)} />
     </Column>
   )
 }
